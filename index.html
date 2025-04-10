@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Teste técnico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="brgaap-imagem.png" alt="brgaap" width="120">
+    <input type="text" id="searchInput" placeholder="Pesquisar...">
+  </header>
+
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Completado</th>
+          <th>Detalhes</th>
+        </tr>
+      </thead>
+      <tbody id="todoList"></tbody>
+    </table>
+
+    <section id="detailsView" style="display:none;">
+      <h2>Detalhes</h2>
+      <p id="todoDetails"></p>
+      <button onclick="closeDetails()">Voltar</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
